@@ -1,0 +1,41 @@
+enum
+extend
+extensions
+import
+message
+oneof
+option
+optional
+package
+public
+repeated
+required
+reserved
+service
+syntax
+to
+
+----------------------------------------------------
+
+[
+	["keyword", "enum"],
+	["keyword", "extend"],
+	["keyword", "extensions"],
+	["keyword", "import"],
+	["keyword", "message"],
+	["keyword", "oneof"],
+	["keyword", "option"],
+	["keyword", "optional"],
+	["keyword", "package"],
+	["keyword", "public"],
+	["keyword", "repeated"],
+	["keyword", "required"],
+	["keyword", "reserved"],
+	["keyword", "service"],
+	["keyword", "syntax"],
+	["keyword", "to"]
+]
+
+----------------------------------------------------
+
+Check for keywords

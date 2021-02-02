@@ -1,0 +1,33 @@
+enum
+fragment
+implements
+input
+interface
+mutation
+on
+query
+scalar
+schema
+type
+union
+
+----------------------------------------------------
+
+[
+	["keyword", "enum"],
+	["class-name", "fragment"],
+	["keyword", "implements"],
+	["class-name", "input"],
+	["keyword", "interface"],
+	["class-name", "mutation"],
+	["keyword", "on"],
+	["class-name", "query"],
+	["keyword", "scalar"],
+	["class-name", "schema"],
+	["keyword", "type"],
+	["class-name", "union"]
+]
+
+----------------------------------------------------
+
+Checks for keywords.

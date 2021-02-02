@@ -1,0 +1,115 @@
+<script type="text/javascript">foo()</script>
+
+<script>
+"foo bar"
+</script>
+
+<script type="application/javascript">
+var a = 0;
+<![CDATA[
+let foo = '</script>';
+]]>
+"foo"
+</script>
+
+----------------------------------------------------
+
+[
+	["tag", [
+		["tag", [
+			["punctuation", "<"],
+			"script"
+		]],
+		["attr-name", ["type"]],
+		["attr-value", [
+			["punctuation", "="],
+			["punctuation", "\""],
+			"text/javascript",
+			["punctuation", "\""]
+		]],
+		["punctuation", ">"]
+	]],
+	["script", [
+		["language-javascript", [
+			["function", "foo"],
+			["punctuation", "("],
+			["punctuation", ")"]
+		]]
+	]],
+	["tag", [
+		["tag", [
+			["punctuation", "</"],
+			"script"
+		]],
+		["punctuation", ">"]
+	]],
+
+	["tag", [
+		["tag", [
+			["punctuation", "<"],
+			"script"
+		]],
+		["punctuation", ">"]
+	]],
+	["script", [
+		["language-javascript", [
+			["string", "\"foo bar\""]
+		]]
+	]],
+	["tag", [
+		["tag", [
+			["punctuation", "</"],
+			"script"
+		]],
+		["punctuation", ">"]
+	]],
+
+	["tag", [
+		["tag", [
+			["punctuation", "<"],
+			"script"
+		]],
+		["attr-name", ["type"]],
+		["attr-value", [
+			["punctuation", "="],
+			["punctuation", "\""],
+			"application/javascript",
+			["punctuation", "\""]
+		]],
+		["punctuation", ">"]
+	]],
+	["script", [
+		["language-javascript", [
+			["keyword", "var"],
+			" a ",
+			["operator", "="],
+			["number", "0"],
+			["punctuation", ";"]
+		]],
+		["included-cdata", [
+			["cdata", "<![CDATA["],
+			["language-javascript", [
+				["keyword", "let"],
+				" foo ",
+				["operator", "="],
+				["string", "'</script>'"],
+				["punctuation", ";"]
+			]],
+			["cdata", "]]>"]
+		]],
+		["language-javascript", [
+			["string", "\"foo\""]
+		]]
+	]],
+	["tag", [
+		["tag", [
+			["punctuation", "</"],
+			"script"
+		]],
+		["punctuation", ">"]
+	]]
+]
+
+----------------------------------------------------
+
+Checks for Javascript usage inside Markup, using <script> tags.

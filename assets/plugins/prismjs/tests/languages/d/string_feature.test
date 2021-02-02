@@ -1,0 +1,76 @@
+r"" x""
+r"fo\"o"c x"00 FBCD"w r"baz"d
+
+q"[fo"o
+bar]"
+q"(fo"o
+bar)"
+q"<fo"o
+bar>"
+q"{fo"o
+bar}"
+
+q"FOO
+Bar "baz"
+FOO"
+
+q"/fo"o
+bar/"
+q"|fo"o
+bar|"
+
+'a' '\'' '\\' '\n' '\xFF' '\377' '\uFFFF' '\U0010FFFF' '\quot'
+
+""
+"foo"c "bar"w "baz"d
+"fo\"o
+bar"
+`foo`
+
+q{foo}
+q{ q{bar} }
+
+----------------------------------------------------
+
+[
+	["string", "r\"\""],
+	["string", "x\"\""],
+
+	["string", "r\"fo\\\"o\"c"],
+	["string", "x\"00 FBCD\"w"],
+	["string", "r\"baz\"d"],
+
+	["string", "q\"[fo\"o\r\nbar]\""],
+	["string", "q\"(fo\"o\r\nbar)\""],
+	["string", "q\"<fo\"o\r\nbar>\""],
+	["string", "q\"{fo\"o\r\nbar}\""],
+
+	["string", "q\"FOO\r\nBar \"baz\"\r\nFOO\""],
+
+	["string", "q\"/fo\"o\r\nbar/\""],
+	["string", "q\"|fo\"o\r\nbar|\""],
+
+	["string", "'a'"],
+	["string", "'\\''"],
+	["string", "'\\\\'"],
+	["string", "'\\n'"],
+	["string", "'\\xFF'"],
+	["string", "'\\377'"],
+	["string", "'\\uFFFF'"],
+	["string", "'\\U0010FFFF'"],
+	["string", "'\\quot'"],
+
+	["string", "\"\""],
+	["string", "\"foo\"c"],
+	["string", "\"bar\"w"],
+	["string", "\"baz\"d"],
+	["string", "\"fo\\\"o\r\nbar\""],
+	["string", "`foo`"],
+
+	["string", "q{foo}"],
+	["string", "q{ q{bar} }"]
+]
+
+----------------------------------------------------
+
+Checks for strings and token strings.
