@@ -1,0 +1,24 @@
+!     qt: core
+
+  unchanged
+
+-    qt: core
++    qt: core gui
+
+< qt: core
+> qt: core quick
+
+----------------------------------------------------
+
+[
+	["diff", "!     qt: core\r\n"],
+	["unchanged", "  unchanged\r\n"],
+	["deleted-sign", "-    qt: core\r\n"],
+	["inserted-sign", "+    qt: core gui\r\n"],
+	["deleted-arrow", "< qt: core\r\n"],
+	["inserted-arrow", "> qt: core quick"]
+]
+
+----------------------------------------------------
+
+Checks for deleted, inserted and different lines.

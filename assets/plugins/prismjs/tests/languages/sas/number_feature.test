@@ -1,0 +1,25 @@
+42
+3.14159
+3.2e10
+0.4e-8
+1.4E+2
+BadFacex
+0c1x
+0b0ax
+
+----------------------------------------------------
+
+[
+	["number", "42"],
+	["number", "3.14159"],
+	["number", "3.2e10"],
+	["number", "0.4e-8"],
+	["number", "1.4E+2"],
+	"\r\nBadFacex\r\n",
+	["number", "0c1x"],
+	["number", "0b0ax"]
+]
+
+----------------------------------------------------
+
+Checks for decimal and hexadecimal numbers.

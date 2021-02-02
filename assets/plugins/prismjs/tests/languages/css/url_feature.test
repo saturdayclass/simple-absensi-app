@@ -1,0 +1,46 @@
+url(foo.png)
+url('foo.png')
+url("foo.png")
+url('foo\
+bar.png')
+url("foo\
+bar.png")
+
+----------------------------------------------------
+
+[
+	["url", [
+		["function", "url"],
+		["punctuation", "("],
+		"foo.png",
+		["punctuation", ")"]
+	]],
+	["url", [
+		["function", "url"],
+		["punctuation", "("],
+		"'foo.png'",
+		["punctuation", ")"]
+	]],
+	["url", [
+		["function", "url"],
+		["punctuation", "("],
+		"\"foo.png\"",
+		["punctuation", ")"]
+	]],
+	["url", [
+		["function", "url"],
+		["punctuation", "("],
+		"'foo\\\r\nbar.png'",
+		["punctuation", ")"]
+	]],
+	["url", [
+		["function", "url"],
+		["punctuation", "("],
+		"\"foo\\\r\nbar.png\"",
+		["punctuation", ")"]
+	]]
+]
+
+----------------------------------------------------
+
+Checks for url(), unquoted, single-quoted and double-quoted.
